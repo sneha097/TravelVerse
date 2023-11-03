@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+  /* margin-inline: max(0px, ((100% - 300px) / 2)); */
+  font: 90%/1.4 system-ui;
+  margin : 5%;
+  margin-left: 3rem;
+  background-image: url('/assets/images/background.jpeg');}
+
+.card {
+  position: sticky;
+  top: 0;
+  background: rgb(55, 12, 87);
+  padding: 1.5rem;
+  box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+@for $i from 1 through 20 {
+  .card:nth-child(#{$i}) {
+    top: $i + rem;
+    rotate: $i + deg;
+  }
+}
+
+    </style>
+    <title>VR DIY</title>
+</head>
+<body>
+    <h1>VIRTUAL REALITY DIY:Easy to Make</h1>
+    <div class="cards-container">
+        <!-- Use a loop to generate cards -->
+        <!-- For example, you can use PHP, JavaScript, or another server-side language to generate dynamic content here -->
+        <div class="card">
+            <img src="/assets/images/33.png" alt="Card 1">
+            <div class="card-content">
+                <!-- <h2>Card Title 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/images/34.png" alt="Card 2">
+            <div class="card-content">
+  
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/images/35.png" alt="Card 2">
+            <div class="card-content">
+  
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/images/36.png" alt="Card 2">
+            <div class="card-content">
+  
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/images/37.png" alt="Card 2">
+            <div class="card-content">
+  
+            </div>
+        </div>
+        <!-- Add more cards here -->
+    </div>
+</body>
+</html>
